@@ -1,0 +1,19 @@
+
+
+--exec BilnacniObracun_PrikazPoBS @ObracunID=201,@stanje='2012-06-16 08:12:57.263'
+
+exec BilnacniObracun_PrikazKolicinski @ID=201,@stanje='2012-06-16 08:12:57.263'
+
+--exec BilnacniObracun_PrikazKolicinskiBPS @ID=200,@stanje='2012-06-16 08:12:57.263'
+
+--exec newReport 201,33,0 --TIME SERIES
+--exec newReport 201,33,1 -TP REG KOREGIRAN TP REAL ODST
+--exec newReport 201,33,2 --FINANÈNI DEL
+--exec newReport 201,33,3 --SUMARNI PODATKI
+
+--exec newReportDt 201 --time series
+--exec newReportKolSodo 201,33 --kolièinski PO SODO
+--exec newReportKolSodo 190,33 --kolièinski PO SODO
+
+
+--exec newReportKolSopo 201,33--realizacija po SOPO

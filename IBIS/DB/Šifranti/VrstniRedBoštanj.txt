@@ -1,0 +1,5 @@
+UPDATE
+PPM 
+SET [VrstniRed] = 2040,
+	[NazivExcel] = 'HE BOSTANJ (ELES)'
+WHERE PPMID=341 

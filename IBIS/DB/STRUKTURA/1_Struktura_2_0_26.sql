@@ -1,0 +1,61 @@
+DROP INDEX [IDX_PodatkiObracuna_Content2] ON [dbo].[PodatkiObracuna]
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_PodatkiObracuna_Content2] ON [dbo].[PodatkiObracuna]
+(
+	[ObracunID] ASC,
+	[OsebaID] ASC,
+	[Interval] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+
+DROP INDEX [IDX_Pogodba_C3] ON [dbo].[Pogodba]
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_Pogodba_C3] ON [dbo].[Pogodba]
+(
+	[PogodbaTipID] ASC,
+	[Partner1] ASC,
+	[Partner2] ASC
+)
+INCLUDE ( 	[NadrejenaOsebaID],
+	[ClanBSID],
+	[VeljaOd],
+	[VeljaDo],
+	[DatumVnosa],
+	[DatumSpremembe]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+DROP INDEX [IDX_PodatkiSkupni] ON [dbo].[PodatkiObracuna_Skupni] WITH ( ONLINE = OFF )
+GO
+
+CREATE UNIQUE CLUSTERED INDEX [IDX_PodatkiSkupni] ON [dbo].[PodatkiObracuna_Skupni]
+(
+	[ObracunID] ASC,
+	[Interval] ASC,
+	[Razlika] ASC,
+	[PreostalaVrednost] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+
+DROP INDEX [IXD_PPM] ON [dbo].[PPM]
+GO
+
+CREATE NONCLUSTERED INDEX [IXD_PPM] ON [dbo].[PPM]
+(
+	[PPMID] ASC,
+	[SistemskiOperater1] ASC,
+	[Dobavitelj1] ASC,
+	[PPMTipID] ASC,
+	[DatumVnosa] ASC,
+	[DatumSpremembe] ASC
+)
+INCLUDE ( 	[PPMJeOddaja],
+	[EIC]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 80) ON [PRIMARY]
+GO
+

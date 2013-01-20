@@ -1,0 +1,40 @@
+
+INSERT  INTO dbo.Stran
+        (
+          Naziv,
+          naslov,
+          datoteka,
+          parent,
+          nivo,
+          pravica,
+          pozicija
+        )
+VALUES  (
+          N'Excel SODO',
+          'Excel SODO',
+          'PrikazExcelSodo.aspx',
+          11,
+          1,
+          50,
+          1105 
+	  ) 
+	
+INSERT  INTO dbo.Stran
+        (
+          Naziv,
+          naslov,
+          datoteka,
+          parent,
+          nivo,
+          pravica,
+          pozicija
+        )
+VALUES  (
+          N'Excel SOPO',
+          'Excel SOPO',
+          'PrikazExcelSopo.aspx',
+          11,
+          1,
+          54,
+          1106 
+	  ) 

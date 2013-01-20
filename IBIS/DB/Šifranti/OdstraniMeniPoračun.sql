@@ -1,0 +1,1 @@
+DELETE FROM dbo.Stran WHERE Naziv = 'Poraèun'

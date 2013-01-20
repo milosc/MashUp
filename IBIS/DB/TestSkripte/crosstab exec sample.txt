@@ -1,0 +1,17 @@
+EXEC CrossTab
+'SELECT R.[Interval],R.[Kolicina],O.Naziv
+FROM [dbo].[RealizacijaPoBS] R JOIN [dbo].[Oseba] O ON R.[OsebaID] = O.[OsebaID] 
+WHERE R.[ObracunID] = 220
+AND GETDATE() BETWEEN O.VeljaOD AND dbo.[infinite](O.VeljaDo)
+AND GETDATE() BETWEEN O.DatumVnosa AND dbo.[infinite](O.DatumSpremembe) ',
+'naziv',
+'sum(Kolicina)[]',
+'interval',
+NULL,
+' ORDER BY 
+DATEPART(day,[Interval]) asc,
+DATEPART(month,[Interval]) asc,
+(CASE WHEN DATEPART(HH,[Interval]) = 0 THEN 24 ELSE DATEPART(HH,[Interval]) end) asc '
+
+
+

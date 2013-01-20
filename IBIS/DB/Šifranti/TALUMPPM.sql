@@ -1,0 +1,4 @@
+SELECT * FROM [dbo].[PPM] WHERE [PPMID] = 92
+UPDATE PPM SET [Dobavitelj1]=70 WHERE [PPMID]=92 AND [Dobavitelj1]=3 AND ID = 933
+SELECT * FROM [dbo].[PPM] WHERE [PPMID] = 92
+

@@ -1,0 +1,117 @@
+TRUNCATE TABLE [dbo].[Meritve_APR_07]
+TRUNCATE TABLE [dbo].[Meritve_APR_08]
+TRUNCATE TABLE [dbo].[Meritve_APR_09]
+TRUNCATE TABLE [dbo].[Meritve_APR_10]
+TRUNCATE TABLE [dbo].[Meritve_APR_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_MAJ_07]
+TRUNCATE TABLE [dbo].[Meritve_MAJ_08]
+TRUNCATE TABLE [dbo].[Meritve_MAJ_09]
+TRUNCATE TABLE [dbo].[Meritve_MAJ_10]
+TRUNCATE TABLE [dbo].[Meritve_MAJ_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_JAN_07]
+TRUNCATE TABLE [dbo].[Meritve_JAN_08]
+TRUNCATE TABLE [dbo].[Meritve_JAN_09]
+TRUNCATE TABLE [dbo].[Meritve_JAN_10]
+TRUNCATE TABLE [dbo].[Meritve_JAN_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_FEB_07]
+TRUNCATE TABLE [dbo].[Meritve_FEB_08]
+TRUNCATE TABLE [dbo].[Meritve_FEB_09]
+TRUNCATE TABLE [dbo].[Meritve_FEB_10]
+TRUNCATE TABLE [dbo].[Meritve_FEB_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_MAR_07]
+TRUNCATE TABLE [dbo].[Meritve_MAR_08]
+TRUNCATE TABLE [dbo].[Meritve_MAR_09]
+TRUNCATE TABLE [dbo].[Meritve_MAR_10]
+TRUNCATE TABLE [dbo].[Meritve_MAR_11]
+
+TRUNCATE TABLE [dbo].[Meritve_JUN_07]
+TRUNCATE TABLE [dbo].[Meritve_JUN_08]
+TRUNCATE TABLE [dbo].[Meritve_JUN_09]
+TRUNCATE TABLE [dbo].[Meritve_JUN_10]
+TRUNCATE TABLE [dbo].[Meritve_JUN_11]
+
+TRUNCATE TABLE [dbo].[Meritve_JUL_07]
+TRUNCATE TABLE [dbo].[Meritve_JUL_08]
+TRUNCATE TABLE [dbo].[Meritve_JUL_09]
+TRUNCATE TABLE [dbo].[Meritve_JUL_10]
+TRUNCATE TABLE [dbo].[Meritve_JUL_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_AVG_07]
+TRUNCATE TABLE [dbo].[Meritve_AVG_08]
+TRUNCATE TABLE [dbo].[Meritve_AVG_09]
+TRUNCATE TABLE [dbo].[Meritve_AVG_10]
+TRUNCATE TABLE [dbo].[Meritve_AVG_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_SEP_07]
+TRUNCATE TABLE [dbo].[Meritve_SEP_08]
+TRUNCATE TABLE [dbo].[Meritve_SEP_09]
+TRUNCATE TABLE [dbo].[Meritve_SEP_10]
+TRUNCATE TABLE [dbo].[Meritve_SEP_11]
+
+TRUNCATE TABLE [dbo].[Meritve_OKT_07]
+TRUNCATE TABLE [dbo].[Meritve_OKT_08]
+TRUNCATE TABLE [dbo].[Meritve_OKT_09]
+TRUNCATE TABLE [dbo].[Meritve_OKT_10]
+TRUNCATE TABLE [dbo].[Meritve_OKT_11]
+
+
+TRUNCATE TABLE [dbo].[Meritve_NOV_07]
+TRUNCATE TABLE [dbo].[Meritve_NOV_08]
+TRUNCATE TABLE [dbo].[Meritve_NOV_09]
+TRUNCATE TABLE [dbo].[Meritve_NOV_10]
+TRUNCATE TABLE [dbo].[Meritve_NOV_11]
+
+
+
+TRUNCATE TABLE [dbo].[Meritve_DEC_07]
+TRUNCATE TABLE [dbo].[Meritve_DEC_08]
+TRUNCATE TABLE [dbo].[Meritve_DEC_09]
+TRUNCATE TABLE [dbo].[Meritve_DEC_10]
+TRUNCATE TABLE [dbo].[Meritve_DEC_11]
+TRUNCATE TABLE [dbo].[casSerija]
+
+TRUNCATE TABLE [dbo].[ObracunKolicinski]
+
+
+DELETE FROM [dbo].[PodatkiObracuna_Skupni] WHERE [ObracunID] <218
+DELETE FROM [dbo].[PodatkiObracuna] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[Obracun] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[RealizacijaPoDobaviteljih] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[RealizacijaPoBS] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[RealizacijaPoBPS] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[KolicinskaOdstopanjaPoBPS] WHERE [ObracunID] < 218
+DELETE FROM [dbo].[KolicinskaOdstopanjaPoBS] WHERE [ObracunID] < 218
+
+DROP TABLE [dbo].[test_PodatkiObracun]
+DROP TABLE [dbo].[test_PodatkiPoracun]
+DROP TABLE [dbo].[casSerija]
+DROP TABLE [dbo].[BO_cenaSum]
+DROP TABLE [dbo].[BO_Meritve]
+DROP TABLE [dbo].[BO_Pogodba]
+DROP TABLE [dbo].[BO_PPM]
+DROP TABLE [dbo].[BO_TrzniPlan]
+DROP TABLE [dbo].[Kolicine]
+DROP TABLE [dbo].[RPodSum]
+DROP TABLE [dbo].[RpodTip]
+DROP TABLE [dbo].[TestKorona]
+DROP TABLE [dbo].[TestKoronaLog]
+DROP TABLE [dbo].[TrzniPlan_Agregacija]
+DROP TABLE [dbo].[zdebug]
+DROP TABLE [dbo].[TST]
+
+DROP TABLE [dbo].[Kontorla_Odstopanj]
+DROP TABLE [dbo].[Kontrola_Distribucij]
+DROP TABLE [dbo].[Kontrola_Realizacije]
+DROP TABLE [dbo].[Kontrola_Sistema]
+DROP TABLE [dbo].[Kontrola_SOPO]
+DROP TABLE [dbo].[Kontrola_TrzniPlan]

@@ -1,0 +1,1 @@
+UPDATE [dbo].[Pogodba] SET [PogodbaTipID]=2 WHERE Id= 8685 AND [PogodbaTipID]=3

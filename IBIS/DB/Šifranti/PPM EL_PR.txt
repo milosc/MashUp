@@ -1,0 +1,262 @@
+--EL PR
+DECLARE @OsebaID BIGINT;
+SET @OsebaID = 8;
+DECLARE @MaxID BIGINT;
+DECLARE @MaxPPMID BIGINT;
+
+SELECT @MaxID = MAX(ID)+1 FROM PPM 
+SELECT @MaxPPMID = MAX(PPMID)+1 FROM PPM 
+
+INSERT  INTO [PPM]
+        (
+          [ID],
+          [PPMID],
+          [STOD],
+          [SMM],
+          [Naziv],
+          [VrstniRed],
+          [NazivExcel],
+          [NazivPorocila],
+          [PlacnikID],
+          [LastnikID],
+          [SistemskiOperater1],
+          [SistemskiOperater2],
+          [Dobavitelj1],
+          [Dobavitelj2],
+          [PPMTipID],
+          [MerilnaNapravaID],
+          [PPMJeOddaja],
+          [VeljaOd],
+          [VeljaDo],
+          [DatumVnosa],
+          [DatumSpremembe]
+        )
+VALUES  (
+          @MaxID,
+          @MaxPPMID,
+          NULL,
+          NULL,
+          'SODO_ND_EL_PR_EL_CE',
+          NULL,
+          NULL,
+          'ND_EL_PR v EL_CE',
+          NULL,
+          NULL,
+          @OsebaID,
+          NULL,
+          @OsebaID,
+          NULL,
+          24,
+          NULL,
+          0,
+          '20080101',
+          NULL,
+          '20080101',
+          NULL
+        )
+
+SELECT @MaxID = MAX(ID)+1 FROM PPM 
+SELECT @MaxPPMID = MAX(PPMID)+1 FROM PPM 
+
+        
+INSERT  INTO [PPM]
+        (
+          [ID],
+          [PPMID],
+          [STOD],
+          [SMM],
+          [Naziv],
+          [VrstniRed],
+          [NazivExcel],
+          [NazivPorocila],
+          [PlacnikID],
+          [LastnikID],
+          [SistemskiOperater1],
+          [SistemskiOperater2],
+          [Dobavitelj1],
+          [Dobavitelj2],
+          [PPMTipID],
+          [MerilnaNapravaID],
+          [PPMJeOddaja],
+          [VeljaOd],
+          [VeljaDo],
+          [DatumVnosa],
+          [DatumSpremembe]
+        )
+VALUES  (
+          @MaxID,
+          @MaxPPMID,
+          NULL,
+          NULL,
+          'SODO_ND_EL_PR_EL_GO',
+          NULL,
+          NULL,
+          'ND_EL_PR v EL_GO',
+          NULL,
+          NULL,
+          @OsebaID,
+          NULL,
+          @OsebaID,
+          NULL,
+          25,
+          NULL,
+          0,
+          '20080101',
+          NULL,
+          '20080101',
+          NULL
+        )
+SELECT @MaxID = MAX(ID)+1 FROM PPM 
+SELECT @MaxPPMID = MAX(PPMID)+1 FROM PPM 
+
+INSERT  INTO [PPM]
+        (
+          [ID],
+          [PPMID],
+          [STOD],
+          [SMM],
+          [Naziv],
+          [VrstniRed],
+          [NazivExcel],
+          [NazivPorocila],
+          [PlacnikID],
+          [LastnikID],
+          [SistemskiOperater1],
+          [SistemskiOperater2],
+          [Dobavitelj1],
+          [Dobavitelj2],
+          [PPMTipID],
+          [MerilnaNapravaID],
+          [PPMJeOddaja],
+          [VeljaOd],
+          [VeljaDo],
+          [DatumVnosa],
+          [DatumSpremembe]
+        )
+VALUES  (
+          @MaxID,
+          @MaxPPMID,
+          NULL,
+          NULL,
+          'SODO_ND_EL_PR_EL_LJ',
+          NULL,
+          NULL,
+          'ND_EL_PR v EL_LJ',
+          NULL,
+          NULL,
+          @OsebaID,
+          NULL,
+          @OsebaID,
+          NULL,
+          26,
+          NULL,
+          0,
+          '20080101',
+          NULL,
+          '20080101',
+          NULL
+        )
+
+SELECT @MaxID = MAX(ID)+1 FROM PPM 
+SELECT @MaxPPMID = MAX(PPMID)+1 FROM PPM 
+
+INSERT  INTO [PPM]
+        (
+          [ID],
+          [PPMID],
+          [STOD],
+          [SMM],
+          [Naziv],
+          [VrstniRed],
+          [NazivExcel],
+          [NazivPorocila],
+          [PlacnikID],
+          [LastnikID],
+          [SistemskiOperater1],
+          [SistemskiOperater2],
+          [Dobavitelj1],
+          [Dobavitelj2],
+          [PPMTipID],
+          [MerilnaNapravaID],
+          [PPMJeOddaja],
+          [VeljaOd],
+          [VeljaDo],
+          [DatumVnosa],
+          [DatumSpremembe]
+        )
+VALUES  (
+          @MaxID,
+          @MaxPPMID,
+          NULL,
+          NULL,
+          'SODO_ND_EL_PR_EL_MB',
+          NULL,
+          NULL,
+          'ND_EL_PR v EL_MB',
+          NULL,
+          NULL,
+          @OsebaID,
+          NULL,
+          @OsebaID,
+          NULL,
+          27,
+          NULL,
+          0,
+          '20080101',
+          NULL,
+          '20080101',
+          NULL
+        )
+        
+SELECT @MaxID = MAX(ID)+1 FROM PPM 
+SELECT @MaxPPMID = MAX(PPMID)+1 FROM PPM 
+
+
+INSERT  INTO [PPM]
+        (
+          [ID],
+          [PPMID],
+          [STOD],
+          [SMM],
+          [Naziv],
+          [VrstniRed],
+          [NazivExcel],
+          [NazivPorocila],
+          [PlacnikID],
+          [LastnikID],
+          [SistemskiOperater1],
+          [SistemskiOperater2],
+          [Dobavitelj1],
+          [Dobavitelj2],
+          [PPMTipID],
+          [MerilnaNapravaID],
+          [PPMJeOddaja],
+          [VeljaOd],
+          [VeljaDo],
+          [DatumVnosa],
+          [DatumSpremembe]
+        )
+VALUES  (
+          @MaxID,
+          @MaxPPMID,
+          NULL,
+          NULL,
+          'SODO_ND_EL_PR_EL_PR',
+          NULL,
+          NULL,
+          'ND_EL_PR v EL_PR',
+          NULL,
+          NULL,
+          @OsebaID,
+          NULL,
+          @OsebaID,
+          NULL,
+          28,
+          NULL,
+          0,
+          '20080101',
+          NULL,
+          '20080101',
+          NULL
+        )
+        

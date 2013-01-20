@@ -1,0 +1,5 @@
+INSERT INTO [PPMTip] ([PPMTipID],[Naziv],[Virtualen],[VrstniRedExcelUvoz])VALUES(24,'(SODO) ND_EL_CE',0,11)
+INSERT INTO [PPMTip] ([PPMTipID],[Naziv],[Virtualen],[VrstniRedExcelUvoz])VALUES(25,'(SODO) ND_EL_GO',0,12)
+INSERT INTO [PPMTip] ([PPMTipID],[Naziv],[Virtualen],[VrstniRedExcelUvoz])VALUES(26,'(SODO) ND_EL_LJ',0,13)
+INSERT INTO [PPMTip] ([PPMTipID],[Naziv],[Virtualen],[VrstniRedExcelUvoz])VALUES(27,'(SODO) ND_EL_MB',0,14)
+INSERT INTO [PPMTip] ([PPMTipID],[Naziv],[Virtualen],[VrstniRedExcelUvoz])VALUES(28,'(SODO) ND_EL_PR',0,15)
